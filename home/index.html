@@ -12,51 +12,170 @@
 <body>
     <header class="navbar">
         <div class="top-bar">
-            <div class="social-links">
-                <a href="https://www.youtube.com/channel/UChPRO1CB_Hvd0TvKRU62iSQ"><i
+            <div class="social-links" aria-label="Social media links">
+                <a href="https://www.youtube.com/channel/UChPRO1CB_Hvd0TvKRU62iSQ" aria-label="YouTube"><i
                         class="fa-brands fa-youtube"></i></a>
-                <a href="https://www.tiktok.com/@harrypotter"><i class="fa-brands fa-tiktok"></i></a>
-                <a href="https://www.facebook.com/harrypotter"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://www.instagram.com/harrypotter"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.whatsapp.com/channel/0029VbCgR8J2v1Im7VXNg51C"><i
+                <a href="https://www.tiktok.com/@harrypotter" aria-label="TikTok"><i
+                        class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.facebook.com/harrypotter" aria-label="Facebook"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/harrypotter" aria-label="Instagram"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.whatsapp.com/channel/0029VbCgR8J2v1Im7VXNg51C" aria-label="WhatsApp"><i
                         class="fa-brands fa-whatsapp"></i></a>
             </div>
-            <div class="brand-logo">
-                <img src="logo.png" alt="Harry Potter">
-            </div>
+            <a href="#" class="brand-logo" aria-label="Harry Potter Home"><img src="HarryPotterLogo.png"
+                    alt="Harry Potter"></a>
             <div class="user-actions">
-                <div class="search-box">
-                    <input type="text" placeholder="Search">
-                    <i class="fa-solid fa-magnifying-giglass"></i>
-                </div>
-                <button class="btn btn-outline">LOG IN</button>
-                <button class="btn btn-solid">SIGN UP</button>
+                <form class="search-box" role="search">
+                    <label for="site-search" class="visually-hidden">Search</label>
+                    <input type="search" id="site-search" placeholder="Search">
+                    <button type="submit" aria-label="Search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+                <a href="#" class="btn btn-outline">LOG IN</a>
+                <a href="#" class="btn btn-solid">SIGN UP</a>
             </div>
         </div>
-        <nav class="sub-nav">
+        <nav class="sub-nav" aria-label="Main navigation">
             <ul>
-                <li><a href="#">NEWS & FEATURES</a></li>
-                <li><a href="#">QUIZZES & PUZZLES</a></li>
+                <li class="nav-dropdown"><a href="#">NEWS & FEATURES<i class="fa-solid fa-chevron-down"></i></a></li>
+                <li class="nav-dropdown"><a href="#">QUIZZES & PUZZLES<i class="fa-solid fa-chevron-down"></i></a></li>
                 <li><a href="#">J. K. ROWLING ARCHIVE</a></li>
-                <li><a href="#">DISCOVER</a></li>
+                <li class="nav-dropdown"><a href="#">DISCOVER<i class="fa-solid fa-chevron-down"></i></a> </li>
                 <li><a href="#">BACK TO HOGWARTS</a></li>
                 <li><a href="#">HBO ORIGINAL SERIES</a></li>
-                <li><a href="#">SPORTING CEREMONY</a></li>
-                <li><a href="#">PATROUNS</a></li>
+                <li><a href="#">SORTING CEREMONY</a></li>
+                <li><a href="#">PATRONUS</a></li>
                 <li><a href="#">SHOP</a></li>
             </ul>
         </nav>
     </header>
-    <main class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h2>J. K. ROWLING</h2>
-            <h3>ORIGINALS</h3>
-            <p>Explore the inner workings of the magical world witha collection of writings from J. K. ROWLING</p>
-            <div class="scroll-diamond"></div>
-        </div>
+    <!--HERO SECTION-->
+    <main>
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h2>J. K. ROWLING</h2>
+                <h3>ORIGINALS</h3>
+                <p>Explore the inner workings of the magical world with a collection of writings from J. K. ROWLING</p>
+                <div class="scroll-diamond"></div>
+            </div>
+        </section>
+        <section class="archive-section">
+            <div class="archive-heading">
+                <h2>Latest &amp; greatest</h2>
+            </div>
+            <div class="featured-story">
+                <div class="featured-image">
+                    <img src="great-lake.webp" alt="The Great Lake">
+                </div>
+                <div class="featured-content">
+                    <span>FEATURE SPOTLIGHT</span>
+                    <h2>The Great Lake</h2>
+                    <p>The grounds of Hogwarts function partly as a nature reserve for magical creatures which have
+                        difficulty existing in Muggle-inhabited areas.</p>
+                    <p class="byline">By J.K. Rowling</p>
+                    <a href="#">READ FEATURE</a>
+                </div>
+            </div>
+            <div class="latest-grid">
+                <article class="latest-card">
+                    <img src="ollivander.jpg" alt="Mr Ollivander">
+                    <h2>Mr Ollivander</h2>
+                    <p>By J.K. Rowling</p>
+                </article>
+                <article class="latest-card">
+                    <img src="scottish-rugby.jpg" alt="Scottish Rugby">
+                    <h2>Scottish Rugby</h2>
+                    <p>By J.K. Rowling</p>
+                </article>
+                <article class="latest-card">
+                    <img src="owls.jpg" alt="Owls">
+                    <h2>Owls</h2>
+                    <p>By J.K. Rowling</p>
+                </article>
+                <article class="latest-card">
+                    <img src="order-of-merlin.jpg" alt="Order of Merlin">
+                    <h2>Order of Merlin</h2>
+                    <p>By J.K. Rowling</p>
+                </article>
+            </div>
+            <div class="archive-divider"></div>
+            <div class="more-heading">
+                <h2>More to explore</h2>
+            </div>
+            <div class="explore-grid">
+                <article class="explore-card">
+                    <img src="quidditch-final.webp" alt="Quidditch World Cup">
+                    <h3>Quidditch World Cup 2014: Final live report</h3>
+                    <p>By J.K. Rowling</p>
+                </article>
+
+                <article class="explore-card">
+                    <img src="daily-prophet.webp" alt="Daily Prophet">
+                    <h3>Quidditch World Cup 2014: Daily Prophet reports</h3>
+                    <p>By J.K. Rowling</p>
+                </article>
+                <article class="explore-card">
+                    <img src="macusa.webp" alt="MACUSA">
+                    <h3>The Magical Congress of the United States of America (MACUSA)</h3>
+                    <p>By J.K. Rowling</p>
+                </article>
+            </div>
+        </section>
     </main>
-    <script src="home/script.js"></script>
+    <!--FOOTER SECTION-->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!--Top Row: Links and Logo-->
+            <div class="footer-top">
+                <div class="footer-links-grid">
+                    <div class="link-column">
+                        <a href="https://www.harrypotter.com/press">Press</a>
+                        <a href="https://help.harrypotter.com/hc/en-us">FAQs</a>
+                    </div>
+                    <div class="link-column">
+                        <a href="https://www.harrypotter.com/terms">Terms & Conditions</a>
+                        <a href="https://www.harrypotter.com/privacy#choices">Ad Choices</a>
+                        <a href="https://www.harrypotter.com/privacy">Privacy & Cookies</a>
+                    </div>
+                    <div class="link-column">
+                        <a href="https://www.harrypotter.com/childrens-privacy-policy">Children's Privacy Policy</a>
+                        <a href="https://www.harrypotter.com/legals">Legals</a>
+                        <a href="https://www.startingharrypotter.com/">Starting Harry Potter</a>
+                    </div>
+                    <div class="footer-logo">
+                        <img src="HarryPotterLogo.png" alt="HARRY POTTER">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider"></div>
+            <!--Bottom Row: Copyright , Disclaimer & Socials-->
+            <div class="footer-bottom">
+                <div class="footer-legal-text">
+                    <p class="copyright">&copy; Wizarding World Digital 2026</p>
+                    <p>Looking for Wizarding World? <a href="HarryPotter.com">HarryPotter.com</a> is the official home
+                        of Harry Potter, Fantastic Beasts, and the Wizarding World, formerly known as Pottermore.</p>
+                    <p>Brought to you by Wizarding World Digital and its parent company Warner Bros. Entertainment Inc.,
+                        delivering the latest news and official products from the Wizarding World and our partners.</p>
+                    <p>All characters and elements &copy; & TM Warner Bros. Entertainment Inc. Publishing Rights
+                        &copy;J.K. Rowling.</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.youtube.com/channel/UChPRO1CB_Hvd0TvKRU62iSQ"><i
+                            class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/@harrypotter"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.facebook.com/harrypotter"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/harrypotter"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.whatsapp.com/channel/0029VbCgR8J2v1Im7VXNg51C"><i
+                            class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
