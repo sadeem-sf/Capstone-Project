@@ -14,19 +14,21 @@
     <a href="index.html" class="back-btn"><i class="fa-solid fa-chevron-left"></i></a>
     <div class="signup-container">
         <!--Logo-->
-        <img src="logo.png" alt="Harry Potter">
+        <img class="hp-logo" src="HarryPotterLogo.png" alt="Harry Potter">
         <!--Section Title-->
         <div class="title-with-lines">
             <span></span>
-            <h2>Sign Up</h2>
+            <h2>Sign Up</h2> 
             <span></span>
         </div>
-        <p class="subtitle">Enjoy magical features including the official sorting ceremony, portrait maker and more!</p>
-        <!--Sign Up Forms-->
-        <form id="signup-form" class="signup-form">
+        <p class="subtitle">Enjoy the magical features including the official sorting ceremony,
+            portriat maker and more!
+        </p>
+        <!--Sign Up Form-->
+        <form id="signupForm" class="signup-form">
             <div class="form-group">
                 <label for="dob">DATE OF BIRTH</label>
-                <input type="text" id="dob" placeholder="DD/MM/YYYY" required>
+                <input type="date" id="dob" placeholder="DD/MM/YYYY" required>
             </div>
             <div class="form-group">
                 <label for="email">EMAIL ADDRESS</label>
@@ -38,27 +40,30 @@
                     <input type="password" id="password" required>
                     <i class="fa-regular fa-eye" id="togglePassword"></i>
                 </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="firstName">FIRST NAME</label>
-                        <input type="text" id="firstName" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="lastName">LAST NAME</label>
-                        <input type="text" id="lastName" required>
-                    </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="firsName">FIRST NAME</label>
+                    <input type="text" id="firstname" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">LAST NAME</label>
+                    <input type="text" id="lastname" required>
                 </div>
             </div>
-            <p class="terms-text">By proceeding you agree to our <a href="#">Terms of Use</a> and acknowledge our <a
-                    href="#">Privacy Policy</a>.</p>
-            <button type="submit" class="btn-solid-blue btn-full">SIGN UP</button>
+            <p class="terms-text">By proceeding you agree to our <a href="#">Terms of Use</a> and
+                acknowledge our <a href="#">Privacy Policy</a>.
+            </p>
+            <button type="submit" class="btn btn-solid-blue btn-full" onclick="window.location.href = 'index.html'">SIGN
+                UP</button>
             <p>Already have an account?</p>
-            <button class="btn btn-outline btn-full" onclick="">LOGIN</button>
+            <button class="btn btn-outline btn-full" onclick="">LOG IN</button>
             </p>
             <div class="change-language">
-                <i class="fa-solid fa-globe"></i>CHANGE LANGUAGE
+                <i class="fa-solid fa-globe"></i>Change Language
             </div>
-        </form>
+    </div>
+    </form>
     </div>
     <script src="script.js"></script>
 </body>
